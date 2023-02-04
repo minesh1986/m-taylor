@@ -1,0 +1,54 @@
+// Fix billing field wrapper
+.woocommerce-input-wrapper {
+	width: 100%;
+}
+
+// Woocommerce product gallery slider width fix
+figure.woocommerce-product-gallery__wrapper {
+	max-width: inherit !important;
+}
+
+// Fix coupon code input width
+@media(min-width: 768px) {
+	#coupon_code.input-text {
+		width: 110px !important;
+	}
+}
+
+.cart-contents {
+    position: relative;
+    display: flex !important;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.cart-contents:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;	
+    content: "\f07a" !important;
+    font-size: 25px;
+    color: $white;
+}
+
+.cart-contents:hover {
+    text-decoration: none;
+}
+
+.cart-contents-count {
+	position: absolute;
+    top: 15px;
+   	right: 1px;
+   	transform: translateY(-105%) translateX(25%);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 22px;
+	height: 22px;
+   	width: 22px;
+	vertical-align: middle;
+	text-align: center;
+	color: #fff;
+    background: #000;
+    border-radius: 50%;
+    padding: 1px;  
+}
