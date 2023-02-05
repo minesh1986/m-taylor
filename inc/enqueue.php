@@ -19,6 +19,7 @@ if ( ! function_exists( 'm_taylor_scripts' ) ) {
 
 		$css_version = $theme_version . '.' . filemtime( get_template_directory() . '/css/theme.min.css' );
 		wp_enqueue_style( 'm_taylor-styles', get_template_directory_uri() . '/css/theme.min.css', array(), $css_version );
+		wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Cabin+Sketch:wght@200;400;700&display=swap', [], null);
 
 		wp_enqueue_script( 'jquery' );
 

@@ -30,7 +30,7 @@ $container = get_theme_mod( 'm_taylor_container_type' );
 
 		<a class="skip-link visually-hidden visually-hidden-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'm_taylor' ); ?></a>
 
-		<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary" aria-labelledby="main-nav-label">
+		<nav id="main-nav" class="navbar navbar-expand-md navbar-light bg-white" aria-labelledby="main-nav-label">
 
 			<h2 id="main-nav-label" class="visually-hidden">
 				<?php esc_html_e( 'Main Navigation', 'm_taylor' ); ?>
@@ -69,9 +69,9 @@ $container = get_theme_mod( 'm_taylor_container_type' );
 				wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
+						'container_class' => 'collapse navbar-collapse mt-n3',
 						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav ml-auto',
+						'menu_class'      => 'navbar-nav mx-auto',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'depth'           => 2,
@@ -79,6 +79,9 @@ $container = get_theme_mod( 'm_taylor_container_type' );
 					)
 				);
 				?>
+				    
+          	<a class="nav-link btn btn-outline-secondary px-4 py-3 mt-n3" href="#">Book your <span class="fw-bold text-grey">FREE</span> consultation</a>
+      
 			<?php if ( 'container' === $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>
@@ -86,5 +89,3 @@ $container = get_theme_mod( 'm_taylor_container_type' );
 		</nav><!-- .site-navigation -->
 
 	</div><!-- #wrapper-navbar end -->
-
-	
