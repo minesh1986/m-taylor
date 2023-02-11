@@ -1,27 +1,13 @@
 <div class="container-wide bg-primary hero">
 
-    <!--<ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>-->
-
     <div class="container">
-
 
     <div class="row justify-content-end">
 
-      <div class="col-7 mt-auto">
+      <div class="col-12 col-md-7 mt-auto">
 
         <h1 class="my-3 fw-bold">Website Development <span class="fw-bold underlined">Done Right!</span></h1>
-        <h2>Essex based freelance website developers</h2>
+        <h2 class="text-muted">Essex Based Freelance Website Developers</h2>
 
         <ul class="mt-4">
             <li>
@@ -54,20 +40,22 @@
             </li> 
         </ul>
 
-        <a href="" class="btn btn-outline-secondary btn-lg my-xxl-3">Start your website project with us today 
+        <a href="/consultation" class="btn btn-outline-secondary btn-lg my-3 d-none d-lg-inline-block">Start Your Website Project With Us Today
             <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M18.067 2.182a.625.625 0 0 0-.884 0l-2.058 2.059 4.634 4.634 2.058-2.058a.623.623 0 0 0 0-.885l-3.75-3.75Zm.808 7.576L14.24 5.125 6.116 13.25h.259a.625.625 0 0 1 .625.624v.625h.625a.625.625 0 0 1 .625.625v.625h.625a.625.625 0 0 1 .625.626V17h.625a.625.625 0 0 1 .625.625v.258l8.125-8.125ZM9.54 19.093a.625.625 0 0 1-.04-.218v-.625h-.625a.625.625 0 0 1-.625-.625V17h-.625A.625.625 0 0 1 7 16.375v-.626h-.625a.625.625 0 0 1-.625-.625V14.5h-.625a.624.624 0 0 1-.219-.04l-.224.223a.625.625 0 0 0-.137.21l-2.5 6.25a.625.625 0 0 0 .812.813l6.25-2.5a.625.625 0 0 0 .21-.138l.223-.223Z"></path>
             </svg>
         </a>
+
+        <a href="/consultation" class="btn btn-outline-secondary btn-lg my-3 d-lg-none">Book Your <span class="fw-bold text-black">FREE</span> Consultation Today!</a>
  
       </div>
 
-      <div class="col-2 my-auto position-relative">
+      <div class="col-12 col-md-5 col-lg-2 my-auto position-relative">
         <img src="/wp-content/themes/m-taylor/img/pexels-orione-conceição-8663197.jpg" class="shadow-lg img-fluid" alt="">
         <img src="/wp-content/themes/m-taylor/img/ratedexcellent-badge-1.png" class="trust-pilot-badge position-absolute img-fluid shadow-lg" alt="">
       </div>
 
-      <div class="col-3">
+      <div class="col-3 d-none d-lg-block">
         <img src="/wp-content/themes/m-taylor/img/pexels-ketut-subiyanto-4623166.jpg" class="shadow-lg img-fluid" alt="">
       </div>
 
@@ -81,30 +69,40 @@
 
   <div class="container bg-white pl-5">
 
-    <div class="row mt-2">
+    <div class="row pt-5 pt-md-0 mt-md-2">
 
-      <div class="col-3 bg-white">
+      <div class="col-12 col-md-3 bg-white">
         
-        <div class="row bg-primary radius-logo-bottom-right h-100">
-          <h3 class="my-auto">We specialise in...</h3>
+        <div class="row specialise radius-logo-bottom-right h-100">
+          <h3 class="my-auto pb-2 pb-md-0 text-muted">We <span class="underlined">Specialise</span> In...</h3>
         </div>
 
       </div>
 
-      <div class="col-9 bg-primary">
+      <div class="col-12 col-md-9 px-0 bg-primary">
 
-        <div class="row bg-white radius-logo-top-left">
-          <div class="col-3 my-auto">
-            <img src="/wp-content/themes/m-taylor/img/WordPress-logotype-standard.png" class="img-fluid" alt="WordPress Brand logo">
-          </div>
-          <div class="col-3 my-auto">
-            <img src="/wp-content/themes/m-taylor/img/WooCommerce-Logo.png" class="img-fluid" alt="WooCommerce Brand logo">
-          </div>
-          <div class="col-3 my-auto">
-            <img src="/wp-content/themes/m-taylor/img/buddypress_logo.png" class="img-fluid" alt="BuddyPress Brand logo"> 
-          </div>
-          <div class="col-3 my-auto">
-            <img src="/wp-content/themes/m-taylor/img/property-hive.png" class="img-fluid" alt="Property Hive Brand logo">
+        <div class="bg-white radius-logo-top-left">
+          <div class="swiper specialise-logos">
+              <div class="swiper-wrapper d-flex align-items-center">
+          
+                  <div class="swiper-slide">
+                    <img src="/wp-content/themes/m-taylor/img/WordPress-logotype-standard.png" class="img-fluid" alt="WordPress Brand logo">
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="/wp-content/themes/m-taylor/img/WooCommerce-Logo.png" class="img-fluid" alt="WooCommerce Brand logo">
+                  </div>         
+
+                  <div class="swiper-slide">
+                    <img src="/wp-content/themes/m-taylor/img/buddypress_logo.png" class="img-fluid" alt="BuddyPress Brand logo"> 
+                  </div>         
+
+                  <div class="swiper-slide">
+                    <img src="/wp-content/themes/m-taylor/img/property-hive.png" class="img-fluid" alt="Property Hive Brand logo">
+                  </div>         
+                
+              </div>
+            </div>  
           </div>
         </div>
 

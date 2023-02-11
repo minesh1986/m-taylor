@@ -30,14 +30,14 @@ $container = get_theme_mod( 'm_taylor_container_type' );
 
 		<a class="skip-link visually-hidden visually-hidden-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'm_taylor' ); ?></a>
 
-		<nav id="main-nav" class="navbar navbar-expand-md navbar-light bg-white" aria-labelledby="main-nav-label">
+		<nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-white" aria-labelledby="main-nav-label">
 
 			<h2 id="main-nav-label" class="visually-hidden">
 				<?php esc_html_e( 'Main Navigation', 'm_taylor' ); ?>
 			</h2>
 
 		<?php if ( 'container' === $container ) : ?>
-			<div class="container">
+			<div class="container mb-4 mb-md-5 mb-xl-2">
 		<?php endif; ?>
 
 					<!-- Your site title as branding in the menu -->
@@ -69,7 +69,7 @@ $container = get_theme_mod( 'm_taylor_container_type' );
 				wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse mt-n3',
+						'container_class' => 'collapse navbar-collapse mt-lg-n3',
 						'container_id'    => 'navbarNavDropdown',
 						'menu_class'      => 'navbar-nav mx-auto',
 						'fallback_cb'     => '',
@@ -80,7 +80,7 @@ $container = get_theme_mod( 'm_taylor_container_type' );
 				);
 				?>
 				    
-          	<a class="nav-link btn btn-outline-secondary px-4 py-3 mt-n3" href="#">Book your <span class="fw-bold text-grey">FREE</span> consultation</a>
+          	<a class="nav-link btn btn-outline-secondary px-4 py-3 mt-n3 d-none d-xl-block" href="/consultation">Book your <span class="fw-bold text-grey">FREE</span> consultation</a>
       
 			<?php if ( 'container' === $container ) : ?>
 			</div><!-- .container -->
