@@ -23,8 +23,8 @@ $container = get_theme_mod( 'm_taylor_container_type' );
 
 	<h3 class="text-center text-muted">Sign up to our <span class="underlined">Newsletter</span> to keep up to date with Promotional and Development Blogs</h3>
 
-	<div class="d-flex justify-content-center my-4">
-		<form class="row g-3">
+	<div class="my-4">
+		<form class="row justify-content-center g-3">
 			<div class="col-auto">
 				<label for="newsletter-email" class="visually-hidden">Your email address</label>
 				<input type="email" class="form-control" id="newsletter-email" placeholder="Your email address" required>
@@ -43,8 +43,8 @@ $container = get_theme_mod( 'm_taylor_container_type' );
 
 					<div class="row pt-5 border-top">
 
-						<div class="col mb-3">
-							<h5 class="mb-3">Speak with us today</h5>
+						<div class="col-12 col-md-6 col-lg-3 mb-3 text-muted">
+							<h5 class="mb-3 text-dark">Speak with us today</h5>
 							<p>
 								<svg width="24" height="24" fill="none" stroke="#48b774" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 									<path d="M3.586 3.586A2 2 0 0 0 3 5v1c0 8.284 6.716 15 15 15h1a2 2 0 0 0 2-2v-3.279a1 1 0 0 0-.684-.949l-4.493-1.498a1 1 0 0 0-1.21.502l-1.13 2.257a11.042 11.042 0 0 1-5.516-5.516l2.257-1.13a1 1 0 0 0 .502-1.21L9.228 3.684A1 1 0 0 0 8.28 3H5a2 2 0 0 0-1.414.586Z"></path>
@@ -64,41 +64,20 @@ $container = get_theme_mod( 'm_taylor_container_type' );
 							SS13 1QY<p>  
 						</div>
 
-						<div class="col mb-3">
-					
-						</div>
-
-						<div class="col mb-3">
+						<div class="col-12 col-md-6 col-lg-3 mb-3">
 						<h5>Useful Links</h5>
-						<ul class="nav flex-column">
-							<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-							<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-							<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-							<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-							<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-						</ul>
+							<?php wp_nav_menu(array('theme_location'  => 'useful-links',)); ?>
 						</div>
 
-						<div class="col mb-3">
-						<h5>T&C's</h5>
-						<ul class="nav flex-column">
-							<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-							<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-							<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-							<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-							<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-						</ul>
+						<div class="col-12 col-md-6 col-lg-3 mb-3">
+						<h5>Development Services</h5>
+							<?php wp_nav_menu(array('theme_location'  => 'our-services',)); ?>
 						</div>
 
-						<div class="col mb-3">
-						<h5>Latest Blogs</h5>
+						<div class="col-12 col-md-6 col-lg-3 mb-3">
+						<h5>Hosting & Maintenance</h5>
 						<ul class="nav flex-column">
-							<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-							<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
-							<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
-							<li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
-							<li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
-						</ul>
+							<?php wp_nav_menu(array('theme_location'  => 'hosting-maintenance',)); ?>
 						</div>
 
 					</div>

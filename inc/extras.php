@@ -236,3 +236,28 @@ if ( ! function_exists( 'm_taylor_kses_title' ) ) {
 		return wp_kses( $data, $allowed_tags );
 	}
 } // End of if function_exists( 'm_taylor_kses_title' ).
+
+//Pull random image from file
+function getRandomImage($folder_path = NULL){
+	if( !empty($folder_path) ){ // if the folder path is not empty
+	$files_array = scandir($folder_path);
+	$count = count($files_array);
+
+	if( $count > 2 ){ // if has files in the folder
+		$minus = $count - 1;
+		$random = rand(2, $minus);
+		$random_file = $files_array[$random]; // random file, result will be for example: image.png
+		$file_link =  get_site_url(null, $folder_path . "/" . $random_file);
+		return '<img class="featured-image" src="'.$file_link.'" alt="'.$random_file.'">';
+	}
+
+	else{
+		return "The folder is empty!";
+	}
+	}
+
+	else{
+		return "Please enter folder path!";
+	}
+
+}

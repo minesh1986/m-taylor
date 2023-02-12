@@ -11,15 +11,51 @@ defined( 'ABSPATH' ) || exit;
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
+	<?php if (! is_front_page()) : ?>
 
-		<?php if (! is_front_page()) {
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		} ?>
+		<div class="row">
 
-	</header><!-- .entry-header -->
+			<div class="col-12 col-md-6 mb-5 mb-md-0">
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+				<header class="entry-header">
+
+					<?php the_title( '<h1 class="entry-title sketched mb-3 mb-md-5">', '</h1>' );?>
+
+					<?php if (!get_post_meta(get_the_ID(), 'subheading', TRUE)) :?>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet malesuada pharetra. Nam vel sapien nec leo dapibus tristique ornare nec lectus. Vestibulum at tempus dui. Vivamus eget imperdiet ligula. Nunc ultricies lacus eget erat rhoncus posuere.</p>
+					<p>Sed ullamcorper risus nulla. In ornare leo nisl, nec egestas metus vulputate sit amet. Ut ultrices leo ut rhoncus blandit.</p>
+
+					<?php else: ?>
+
+						<?php echo get_post_meta(get_the_ID(), 'subheading', TRUE); ?>
+
+					<?php endif; ?>	
+
+					<a class="btn btn-outline-secondary px-4 py-3 my-4 fw-bold" href="/consultation">Book your <span class="fw-bold text-dark">FREE</span> consultation today!</a>
+
+				</header><!-- .entry-header -->
+
+			</div>
+
+			<div class="col-12 col-md-6 image-blob pb-5" style="background-image:url('/wp-content/themes/m-taylor/img/blobs/blob-2.svg');">
+
+				<?php if (!get_the_post_thumbnail( $post->ID, 'full', )) {
+
+					echo getRandomImage('wp-content/themes/m-taylor/img/random-images');
+
+				} else {
+
+					echo get_the_post_thumbnail( $post->ID, 'full', array('class' => 'featured-image') ); 
+
+				} ?>	
+
+			</div>
+			
+		</div>
+
+	<?php endif; ?>	
+
 
 	<div class="entry-content">
 

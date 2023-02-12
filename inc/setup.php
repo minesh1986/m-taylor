@@ -155,3 +155,18 @@ if ( ! function_exists( 'm_taylor_all_excerpts_get_more_link' ) ) {
 		return $post_excerpt;
 	}
 }
+
+/*
+* Menu locations
+*/
+
+function custom_menus() {
+	register_nav_menus(
+	  array(
+		'useful-links' => __( 'Useful Links' ),
+		'our-services' => __( 'Our Services' ),
+		'hosting-maintenance' => __( 'Hosting & Maintenance' ),
+	  )
+	);
+  }
+  add_action( 'init', 'custom_menus' );
