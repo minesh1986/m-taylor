@@ -256,7 +256,7 @@ h2 {
     }
 
     .image-blob {
-        background-position: 27% 337%;
+        /*background-position: 27% 337%;
         transform: translate(0,-29px);
         @include media-breakpoint-up(md) {
             background-position: 16% 297%;
@@ -269,6 +269,25 @@ h2 {
         }
         @include media-breakpoint-up(xxl) {
             background-position: 24% 230%;
+        }*/
+
+        &::before {
+            @include media-breakpoint-up(md) {
+                content: url('/wp-content/uploads/2023/02/blob-2.png');
+                position: absolute;
+                z-index: -1;
+                top: 84px;
+                right: -18px;
+            }
+            @include media-breakpoint-up(lg) {
+                top: 89px;
+                right: 1px;
+            }
+            @include media-breakpoint-up(xl) {
+                top: 162px;
+                right: 19%;
+            }
+
         }
 
     }

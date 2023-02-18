@@ -38,7 +38,7 @@ defined( 'ABSPATH' ) || exit;
 
 			</div>
 
-			<div class="col-12 col-md-6 image-blob pb-5" style="background-image:url('/wp-content/themes/m-taylor/img/blobs/blob-2.svg');">
+			<div class="col-12 col-md-6 pb-5 position-relative">
 
 				<?php if (!get_the_post_thumbnail( $post->ID, 'full', )) {
 
@@ -48,7 +48,9 @@ defined( 'ABSPATH' ) || exit;
 
 					echo get_the_post_thumbnail( $post->ID, 'full', array('class' => 'featured-image') ); 
 
-				} ?>	
+				} ?>
+				
+				<div class="image-blob"></div>
 
 			</div>
 			
